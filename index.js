@@ -24,4 +24,9 @@ bot.start(async(ctx)=>{
 
 
 
-bot.launch()
+bot.launch({
+    webhook: {
+        domain: 'https://tr300-bot.onrender.com',
+        port: process.env.PORT || 3000,
+    },
+});
